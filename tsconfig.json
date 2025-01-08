@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "incremental": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "module": "commonjs",
+    "outDir": "./dist",
+    "paths": {
+      "@infra/*": ["src/infra/*"],
+      "@application/*": ["src/application/*"],
+      "@domain/*": ["src/domain/*"],
+      "@shared/*": ["src/shared/*"]
+    },
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "es2022",
+    "types": [
+      "@types/node",
+      "@types/jest"
+    ]
+  },
+  "include": ["actions", "bin", "commands", "lib"],
+  "exclude": ["node_modules"]
+}
